@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+
+<title>Realce Odonto - Dr. Ravel | Clínica Odontológica em Alagoinhas - BA</title>
+
+<meta name="description" content="Realce Odonto, clínica do Dr. Ravel Carvalho no Centro de Alagoinhas-BA. Implantes, próteses, facetas, clareamento, tratamento de canal e ortodontia. Agende pelo WhatsApp.">
+<meta name="keywords" content="dentista em Alagoinhas, clínica odontológica Alagoinhas, implante dentário Alagoinhas, Dr. Ravel dentista, Realce Odonto, odontologia Centro Alagoinhas">
+<meta name="author" content="Realce Odonto - Dr. Ravel">
+<meta name="robots" content="index, follow">
+<meta name="language" content="pt-BR">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Realce Odonto - Dr. Ravel | Clínica Odontológica em Alagoinhas">
+<meta property="og:description" content="Implantes, próteses, facetas, clareamento e reabilitação oral no Centro de Alagoinhas-BA. Agende sua avaliação.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="canonical" href="https://www.realceodonto.com.br/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='27' cy='27' r='19' fill='none' stroke='%23B8863E' stroke-width='4'/%3E%3Cline x1='41' y1='41' x2='55' y2='55' stroke='%2320231D' stroke-width='5' stroke-linecap='round'/%3E%3Cpath d='M18 29c3 5 15 5 18 0' fill='none' stroke='%2320231D' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Realce Odonto - Dr. Ravel",
+  "image": "",
+  "url": "https://www.realceodonto.com.br/",
+  "telephone": "+55-75-99912-7479",
+  "email": "realceodonto@hotmail.com",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. Lauro de Freitas, 167, Centro",
+    "addressLocality": "Alagoinhas",
+    "addressRegion": "BA",
+    "postalCode": "48005-015",
+    "addressCountry": "BR"
+  },
+  "areaServed": { "@type": "City", "name": "Alagoinhas" },
+  "medicalSpecialty": "Dentistry",
+  "founder": { "@type": "Person", "name": "Ravel Bastos Carvalho" }
+}
+</script>
+
+<style>
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+
+  :root{
+    --paper:#F7F3EA;
+    --paper-deep:#EFE7D2;
+    --ink:#20231D;
+    --ink-soft:#585C4F;
+    --brass:#B8863E;
+    --brass-deep:#8C6428;
+    --line:#DFD5B8;
+    --white:#FFFEF9;
+    --max:1120px;
+  }
+
+  body{
+    font-family:"Inter", sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; text-decoration:none; }
+  button{ font-family:inherit; }
+  ul{ list-style:none; }
+
+  .wrap{ width:min(var(--max), 92%); margin:auto; }
+
+  h1,h2,h3,.serif{ font-family:"Fraunces", serif; font-weight:600; color:var(--ink); letter-spacing:-0.01em; }
+
+  h2{ font-size:clamp(30px,3.6vw,44px); line-height:1.12; margin-bottom:14px; }
+  h3{ font-size:20px; margin-bottom:6px; }
+
+  p{ color:var(--ink-soft); }
+
+  .rule{ height:1px; background:var(--line); border:0; }
+
+  :focus-visible{ outline:2px solid var(--brass-deep); outline-offset:3px; }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation:none !important; transition:none !important; }
+  }
+
+  /* ---------- HEADER ---------- */
+
+  header{
+    position:fixed; top:0; left:0; width:100%; z-index:1000;
+    background:rgba(247,243,234,0);
+    transition:background .3s ease, box-shadow .3s ease;
+  }
+  header.scrolled{
+    background:rgba(247,243,234,.94);
+    backdrop-filter:blur(10px);
+    box-shadow:0 1px 0 var(--line);
+  }
+
+  .nav{
+    height:80px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+
+  .brand{ display:flex; align-items:center; gap:10px; }
+  .brand-mark{ width:34px; height:34px; flex-shrink:0; }
+  .brand span{
+    font-family:"Fraunces", serif; font-weight:600; font-size:19px; color:var(--ink);
+  }
+
+  .navlinks{ display:flex; align-items:center; gap:34px; }
+  .navlinks a{ font-size:14px; font-weight:500; color:var(--ink-soft); }
+  .navlinks a:hover{ color:var(--ink); }
+
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    border:1px solid transparent; cursor:pointer;
+    padding:13px 22px; border-radius:4px;
+    font-weight:600; font-size:14.5px;
+    transition:background .2s ease, color .2s ease, border-color .2s ease, transform .15s ease;
+    white-space:nowrap;
+  }
+  .btn-primary{ background:var(--brass); color:var(--white); }
+  .btn-primary:hover{ background:var(--brass-deep); transform:translateY(-1px); }
+  .btn-outline{ border-color:var(--ink); color:var(--ink); background:transparent; }
+  .btn-outline:hover{ background:var(--ink); color:var(--paper); }
+
+  .menu-btn{
+    display:none; width:38px; height:38px; border:0; background:transparent;
+    cursor:pointer; position:relative;
+  }
+  .menu-btn span{
+    position:absolute; left:8px; right:8px; height:2px; background:var(--ink);
+    transition:.25s;
+  }
+  .menu-btn span:nth-child(1){ top:14px; }
+  .menu-btn span:nth-child(2){ top:22px; }
+  .menu-btn.active span:nth-child(1){ transform:translateY(8px) rotate(45deg); }
+  .menu-btn.active span:nth-child(2){ transform:translateY(0) rotate(-45deg); }
+
+  /* ---------- HERO ---------- */
+
+  .hero{ padding:168px 0 100px; }
+
+  .hero-grid{
+    display:grid; grid-template-columns:1.1fr .9fr; gap:60px; align-items:center;
+  }
+
+  h1{
+    font-size:clamp(38px,5.2vw,60px);
+    line-height:1.08;
+    margin-bottom:22px;
+    max-width:12ch;
+  }
+
+  .hero-lede{ font-size:18px; max-width:46ch; margin-bottom:34px; }
+
+  .hero-actions{ display:flex; gap:14px; flex-wrap:wrap; margin-bottom:34px; }
+
+  .hero-meta{
+    display:flex; gap:26px; flex-wrap:wrap; font-size:14px; color:var(--ink-soft);
+  }
+  .hero-meta li{ display:flex; align-items:center; gap:8px; }
+  .hero-meta svg{ flex-shrink:0; }
+
+  .hero-visual{ display:flex; justify-content:center; }
+
+  /* ---------- TRUST STRIP ---------- */
+
+  .trust{ background:var(--white); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .trust-grid{
+    display:grid; grid-template-columns:repeat(3,1fr);
+    padding:34px 0;
+  }
+  .trust-item{
+    text-align:center; padding:0 18px; border-right:1px solid var(--line);
+  }
+  .trust-item:last-child{ border-right:0; }
+  .trust-item strong{ display:block; font-family:"Fraunces",serif; font-size:22px; color:var(--ink); margin-bottom:4px; }
+  .trust-item span{ font-size:13.5px; color:var(--ink-soft); }
+
+  /* ---------- SECTIONS ---------- */
+
+  section{ padding:96px 0; }
+  .section-head{ max-width:640px; margin-bottom:50px; }
+  .section-head p{ font-size:16.5px; }
+
+  /* ---------- ABOUT ---------- */
+
+  .about-grid{ display:grid; grid-template-columns:.85fr 1.15fr; gap:64px; align-items:start; }
+
+  .plate{
+    border:1px solid var(--line); background:var(--white); border-radius:6px;
+    padding:44px 30px; text-align:center;
+  }
+  .plate-mono{
+    width:76px; height:76px; margin:0 auto 18px; border-radius:50%;
+    border:1.5px solid var(--brass); display:grid; place-items:center;
+    font-family:"Fraunces",serif; font-size:26px; color:var(--brass-deep); font-weight:600;
+  }
+  .plate strong{ display:block; font-family:"Fraunces",serif; font-size:19px; margin-bottom:2px; }
+  .plate em{ font-style:normal; font-size:13.5px; color:var(--ink-soft); display:block; margin-bottom:16px; }
+  .plate .rule{ margin:16px 0; }
+  .plate-fact{ font-size:13.5px; color:var(--ink-soft); text-align:left; display:flex; justify-content:space-between; padding:7px 0; }
+  .plate-fact b{ color:var(--ink); font-weight:600; }
+
+  .about-content p{ margin-bottom:18px; max-width:58ch; }
+
+  .checklist{ margin-top:22px; display:grid; gap:14px; }
+  .checklist li{ display:flex; gap:12px; align-items:flex-start; font-weight:500; color:var(--ink); font-size:15px; }
+  .checklist svg{ flex-shrink:0; margin-top:3px; }
+
+  /* ---------- SERVICES ---------- */
+
+  .services{ background:var(--paper-deep); }
+
+  .service-list{ border-top:1px solid var(--line); }
+  .service-row{
+    display:grid; grid-template-columns:56px 1fr; gap:22px;
+    padding:26px 0; border-bottom:1px solid var(--line);
+    align-items:flex-start;
+    transition:padding-left .2s ease;
+  }
+  .service-row:hover{ padding-left:10px; }
+  .service-icon{
+    width:52px; height:52px; border-radius:50%; background:var(--white);
+    border:1px solid var(--line); display:grid; place-items:center; flex-shrink:0;
+  }
+  .service-row h3{ margin-bottom:4px; }
+  .service-row p{ font-size:15px; max-width:60ch; }
+
+  /* ---------- PROCESS ---------- */
+
+  .process-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:0; }
+  .process-step{ padding:0 26px 0 0; position:relative; }
+  .process-step:not(:last-child){ border-right:1px solid var(--line); }
+  .process-step:not(:first-child){ padding-left:26px; }
+  .process-num{ font-family:"Fraunces",serif; font-size:34px; color:var(--brass); margin-bottom:10px; }
+  .process-step h3{ font-size:17px; }
+  .process-step p{ font-size:14.5px; }
+
+  /* ---------- TESTIMONIAL ---------- */
+
+  .testimonial{ background:var(--ink); color:var(--paper); }
+  .testimonial blockquote{
+    font-family:"Fraunces",serif; font-weight:500; font-style:italic;
+    font-size:clamp(22px,3vw,32px); line-height:1.4; max-width:800px;
+    color:var(--white);
+  }
+  .testimonial cite{ display:block; margin-top:24px; font-style:normal; font-size:14px; color:#B9BCAE; }
+
+  /* ---------- FAQ ---------- */
+
+  .faq{ max-width:760px; }
+  .faq-item{ border-bottom:1px solid var(--line); }
+  .faq-q{
+    width:100%; text-align:left; background:transparent; border:0; cursor:pointer;
+    padding:22px 0; display:flex; justify-content:space-between; align-items:center; gap:20px;
+    font-family:"Fraunces",serif; font-size:18px; color:var(--ink);
+  }
+  .faq-q svg{ flex-shrink:0; transition:transform .25s ease; color:var(--brass-deep); }
+  .faq-item.open .faq-q svg{ transform:rotate(45deg); }
+  .faq-a{ max-height:0; overflow:hidden; transition:max-height .3s ease; }
+  .faq-a p{ padding-bottom:22px; font-size:15px; max-width:64ch; }
+
+  /* ---------- LOCATION ---------- */
+
+  .location{ background:var(--paper-deep); }
+  .loc-grid{ display:grid; grid-template-columns:.8fr 1.2fr; gap:26px; align-items:stretch; }
+
+  .loc-panel{
+    background:var(--ink); color:var(--paper); border-radius:6px; padding:42px;
+  }
+  .loc-panel h2{ color:var(--white); }
+  .loc-panel > p{ color:#C7CABB; margin-bottom:28px; }
+  .loc-line{ display:flex; gap:14px; margin-bottom:20px; align-items:flex-start; }
+  .loc-line svg{ flex-shrink:0; margin-top:3px; color:var(--brass); }
+  .loc-line strong{ display:block; color:var(--white); font-size:15px; }
+  .loc-line span{ font-size:14px; color:#C7CABB; }
+
+  .map-frame{ border-radius:6px; overflow:hidden; min-height:420px; border:1px solid var(--line); }
+  .map-frame iframe{ width:100%; height:100%; min-height:420px; border:0; }
+
+  /* ---------- CTA ---------- */
+
+  .cta-box{
+    background:var(--brass); color:var(--white); border-radius:10px;
+    padding:60px; text-align:center;
+  }
+  .cta-box h2{ color:var(--white); max-width:640px; margin:0 auto 12px; }
+  .cta-box p{ color:#FBF3E4; max-width:520px; margin:0 auto 28px; }
+  .cta-box .btn-primary{ background:var(--ink); }
+  .cta-box .btn-primary:hover{ background:#000; }
+
+  /* ---------- FOOTER ---------- */
+
+  footer{ background:#151812; color:#93968A; padding:60px 0 26px; }
+  .foot-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:50px; padding-bottom:40px; }
+  .foot-brand{ display:flex; align-items:center; gap:10px; margin-bottom:14px; }
+  .foot-brand span{ font-family:"Fraunces",serif; color:var(--white); font-size:18px; }
+  footer p{ font-size:14px; max-width:340px; color:#93968A; }
+  footer h4{ color:var(--white); font-size:14px; margin-bottom:16px; font-weight:600; }
+  footer a{ display:block; margin-bottom:10px; font-size:14px; }
+  footer a:hover{ color:var(--white); }
+  .copyright{ border-top:1px solid #262A21; padding-top:22px; text-align:center; font-size:12.5px; }
+
+  /* ---------- WHATSAPP FLOAT ---------- */
+
+  .wa-float{
+    position:fixed; right:22px; bottom:22px; z-index:999;
+    display:flex; align-items:center; gap:10px;
+    background:#1E7A50; color:var(--white); padding:14px 18px 14px 14px;
+    border-radius:100px; box-shadow:0 10px 26px rgba(0,0,0,.22);
+    font-size:14px; font-weight:600;
+    transition:transform .2s ease;
+  }
+  .wa-float:hover{ transform:translateY(-2px); }
+
+  /* ---------- MOBILE ---------- */
+
+  @media (max-width:900px){
+    .navlinks{
+      position:fixed; top:80px; left:0; right:0; background:var(--white);
+      flex-direction:column; align-items:stretch; gap:0;
+      padding:8px 6%; box-shadow:0 12px 30px rgba(0,0,0,.08);
+      transform:translateY(-8px); opacity:0; pointer-events:none;
+      transition:.2s ease;
+    }
+    .navlinks.active{ transform:translateY(0); opacity:1; pointer-events:auto; }
+    .navlinks a{ padding:14px 0; border-bottom:1px solid var(--line); }
+    .navlinks .btn{ margin:14px 0; }
+    .menu-btn{ display:block; }
+
+    .hero{ padding:150px 0 70px; }
+    .hero-grid{ grid-template-columns:1fr; }
+    .hero-visual{ order:-1; margin-bottom:10px; }
+    .hero-visual svg{ width:200px; }
+
+    .about-grid, .loc-grid{ grid-template-columns:1fr; }
+    .process-grid{ grid-template-columns:1fr 1fr; row-gap:30px; }
+    .process-step:nth-child(2n){ border-right:0; }
+    .process-step:nth-child(1),.process-step:nth-child(2){ border-bottom:1px solid var(--line); padding-bottom:26px; }
+    .foot-grid{ grid-template-columns:1fr 1fr; }
+  }
+
+  @media (max-width:600px){
+    section{ padding:70px 0; }
+    .trust-grid{ grid-template-columns:1fr; }
+    .trust-item{ border-right:0; border-bottom:1px solid var(--line); padding:16px 0; }
+    .trust-item:last-child{ border-bottom:0; }
+    .hero-actions{ flex-direction:column; }
+    .hero-actions .btn{ width:100%; }
+    .service-row{ grid-template-columns:44px 1fr; gap:16px; }
+    .process-grid{ grid-template-columns:1fr; }
+    .process-step{ border-right:0 !important; padding:0 0 22px !important; border-bottom:1px solid var(--line); }
+    .process-step:last-child{ border-bottom:0; }
+    .cta-box{ padding:40px 24px; }
+    .foot-grid{ grid-template-columns:1fr; gap:32px; }
+    .wa-float span{ display:none; }
+    .wa-float{ padding:14px; }
+  }
+
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="wrap nav">
+    <a href="#inicio" class="brand">
+      <svg class="brand-mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="27" cy="27" r="18" stroke="#B8863E" stroke-width="4"/>
+        <line x1="40" y1="40" x2="54" y2="54" stroke="#20231D" stroke-width="5" stroke-linecap="round"/>
+        <path d="M19 29c3 5 15 5 18 0" stroke="#20231D" stroke-width="3" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span>Realce Odonto</span>
+    </a>
+
+    <nav class="navlinks" id="navlinks">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#processo">Como funciona</a>
+      <a href="#faq">Perguntas frequentes</a>
+      <a href="#localizacao">Localização</a>
+      <a href="https://wa.me/5575999127479?text=Ol%C3%A1!%20Quero%20agendar%20uma%20consulta%20na%20Realce%20Odonto." class="btn btn-primary">Agendar consulta</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Cuidado que dá vontade de sorrir de novo.</h1>
+        <p class="hero-lede">Na Realce Odonto, o Dr. Ravel Carvalho e a equipe cuidam do seu sorriso no Centro de Alagoinhas com atendimento personalizado — da avaliação ao resultado final.</p>
+
+        <div class="hero-actions">
+          <a href="https://wa.me/5575999127479?text=Ol%C3%A1!%20Quero%20agendar%20uma%20consulta%20na%20Realce%20Odonto." class="btn btn-primary">
+            Agendar minha consulta
+          </a>
+          <a href="#servicos" class="btn btn-outline">Conhecer os tratamentos</a>
+        </div>
+
+        <ul class="hero-meta">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8C6428" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            R. Lauro de Freitas, 167 — Centro, Alagoinhas
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8C6428" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 3a2 2 0 0 1-.4 2.1L8 10.1a16 16 0 0 0 6 6l1.3-1.4a2 2 0 0 1 2.1-.4c1 .4 2 .6 3 .7a2 2 0 0 1 1.7 2z"/></svg>
+            (75) 3422-2057
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustração de uma lupa realçando um sorriso">
+          <circle cx="150" cy="145" r="98" stroke="#20231D" stroke-width="3"/>
+          <path d="M150 62a83 83 0 0 1 68 36" stroke="#B8863E" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+          <line x1="216" y1="211" x2="268" y2="263" stroke="#20231D" stroke-width="10" stroke-linecap="round"/>
+          <line x1="216" y1="211" x2="268" y2="263" stroke="#F7F3EA" stroke-width="3" stroke-linecap="round"/>
+          <path d="M104 138c14 26 88 26 102 0" stroke="#B8863E" stroke-width="6" stroke-linecap="round" fill="none"/>
+          <g stroke="#B8863E" stroke-width="6" stroke-linecap="round">
+            <line x1="118" y1="150" x2="118" y2="160"/>
+            <line x1="138" y1="158" x2="138" y2="169"/>
+            <line x1="160" y1="161" x2="160" y2="172"/>
+            <line x1="182" y1="158" x2="182" y2="169"/>
+            <line x1="202" y1="150" x2="202" y2="160"/>
+          </g>
+          <path d="M62 55l6 14 14 6-14 6-6 14-6-14-14-6 14-6z" fill="#B8863E" opacity=".85"/>
+          <path d="M258 96l4 9 9 4-9 4-4 9-4-9-9-4 9-4z" fill="#20231D" opacity=".5"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <div class="trust">
+    <div class="wrap trust-grid">
+      <div class="trust-item">
+        <strong>Desde 2018</strong>
+        <span>Atendendo pacientes no Centro de Alagoinhas</span>
+      </div>
+      <div class="trust-item">
+        <strong>100% de recomendação</strong>
+        <span>Avaliações de pacientes no Facebook</span>
+      </div>
+      <div class="trust-item">
+        <strong>Infinity Prime</strong>
+        <span>Dr. Ravel é membro oficial do grupo</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="sobre">
+    <div class="wrap about-grid">
+      <div class="plate">
+        <div class="plate-mono">RC</div>
+        <strong>Dr. Ravel Carvalho</strong>
+        <em>Cirurgião-dentista responsável técnico</em>
+        <div class="rule"></div>
+        <div class="plate-fact"><span>Clínica</span><b>Realce Odonto</b></div>
+        <div class="plate-fact"><span>Localização</span><b>Centro, Alagoinhas</b></div>
+        <div class="plate-fact"><span>Atuando desde</span><b>2018</b></div>
+        <div class="plate-fact"><span>Formação</span><b>Membro Infinity Prime</b></div>
+      </div>
+
+      <div class="about-content">
+        <h2>Um dentista que planeja antes de tratar.</h2>
+        <p>Ravel Bastos Carvalho é o cirurgião-dentista responsável técnico pela Realce Odonto. Membro oficial do Infinity Prime, ele conduz reabilitações orais, implantes e tratamentos estéticos com foco em conforto e em um resultado com aparência natural.</p>
+        <p>Cada tratamento começa com uma avaliação cuidadosa, para que você entenda exatamente o que precisa ser feito — e por quê — antes de qualquer procedimento.</p>
+
+        <ul class="checklist">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B8863E" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+            Atendimento pensado para o seu caso, não um protocolo padrão
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B8863E" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+            Plano de tratamento explicado antes de começar
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B8863E" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+            Acompanhamento em todas as etapas, do início ao resultado
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="servicos" class="services">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Tratamentos</h2>
+        <p>Da manutenção do dia a dia às reabilitações mais completas, cada tratamento é conduzido com planejamento próprio.</p>
+      </div>
+
+      <div class="service-list">
+
+        <div class="service-row">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8C6428" stroke-width="1.8"><path d="M12 3c-3 0-5 2-5 5 0 3 1 4 1 7 0 2 1 4 2 4s1-3 2-3 1 3 2 3 2-2 2-4c0-3 1-4 1-7 0-3-2-5-5-5z"/><line x1="12" y1="9" x2="12" y2="15"/></svg>
+          </div>
+          <div>
+            <h3>Implantes dentários</h3>
+            <p>Substituição de dentes perdidos com fixação estável e aspecto natural.</p>
+          </div>
+        </div>
+
+        <div class="service-row">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8C6428" stroke-width="1.8"><rect x="4" y="9" width="16" height="7" rx="1.5"/><line x1="8" y1="16" x2="8" y2="19"/><line x1="16" y1="16" x2="16" y2="19"/></svg>
+          </div>
+          <div>
+            <h3>Próteses dentárias</h3>
+            <p>Próteses fixas e removíveis planejadas para conforto e função.</p>
+          </div>
+        </div>
+
+        <div class="service-row">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8C6428" stroke-width="1.8"><path d="M8 4l8 2 1 9-4 5-5-3-1-9z"/></svg>
+          </div>
+          <div>
+            <h3>Facetas</h3>
+            <p>Ajustes estéticos discretos que valorizam o formato natural do sorriso.</p>
+          </div>
+        </div>
+
+        <div class="service-row">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8C6428" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="4.2" y1="4.2" x2="6.3" y2="6.3"/><line x1="17.7" y1="17.7" x2="19.8" y2="19.8"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg>
+          </div>
+          <div>
+            <h3>Clareamento dental</h3>
+            <p>Procedimento de clareamento com acompanhamento profissional.</p>
+          </div>
+        </div>
+
+        <div class="service-row">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8C6428" stroke-width="1.8"><path d="M4 15c3 4 13 4 16 0" stroke-linecap="round"/><path d="M6 15V9a6 6 0 0 1 12 0v6" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h3>Reabilitação oral</h3>
+            <p>Recuperação completa da mastigação, da fala e da estética do sorriso.</p>
+          </div>
+        </div>
+
+        <div class="service-row">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8C6428" stroke-width="1.8"><line x1="12" y1="3" x2="12" y2="15"/><path d="M9 15c0 2 1 5 3 6 2-1 3-4 3-6"/></svg>
+          </div>
+          <div>
+            <h3>Tratamento de canal</h3>
+            <p>Tratamento endodôntico para preservar o dente natural.</p>
+          </div>
+        </div>
+
+        <div class="service-row">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8C6428" stroke-width="1.8"><path d="M9 3l6 1-1 8-6-1z"/><path d="M8 12l7 1-1 7-6-1z"/></svg>
+          </div>
+          <div>
+            <h3>Restaurações</h3>
+            <p>Reparo de dentes com cárie, desgaste ou fratura.</p>
+          </div>
+        </div>
+
+        <div class="service-row">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8C6428" stroke-width="1.8"><path d="M4 12c0-3 2-6 8-6s8 3 8 6" stroke-linecap="round"/><line x1="6" y1="12" x2="6" y2="16"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="18" y1="12" x2="18" y2="16"/></svg>
+          </div>
+          <div>
+            <h3>Aparelhos ortodônticos</h3>
+            <p>Correção do alinhamento dentário para adultos e crianças.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="processo">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Como funciona seu atendimento</h2>
+        <p>Do primeiro contato ao acompanhamento final, cada etapa é combinada com você.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="process-num">01</div>
+          <h3>Contato</h3>
+          <p>Você fala com a equipe pelo WhatsApp ou telefone e conta o que precisa.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">02</div>
+          <h3>Avaliação</h3>
+          <p>Consulta inicial com exame clínico para entender o seu caso.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">03</div>
+          <h3>Plano de tratamento</h3>
+          <p>Você recebe um plano claro, com etapas e prazos definidos.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">04</div>
+          <h3>Acompanhamento</h3>
+          <p>A equipe acompanha cada etapa do tratamento até o resultado final.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonial">
+    <div class="wrap">
+      <blockquote>
+        “Pacientes descrevem o Dr. Ravel como atencioso e preciso, e destacam a confiança que sentem no atendimento do início ao fim do tratamento.”
+      </blockquote>
+      <cite>— com base em avaliações de pacientes no Facebook e Google</cite>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Perguntas frequentes</h2>
+      </div>
+
+      <div class="faq">
+        <div class="faq-item">
+          <button class="faq-q">
+            Preciso de encaminhamento para agendar uma avaliação?
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a"><p>Não. Você pode agendar diretamente pelo WhatsApp ou telefone, sem precisar de encaminhamento.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            Como sei qual tratamento é indicado para mim?
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a"><p>Isso é definido na consulta de avaliação, após o exame clínico do seu caso específico.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            Quanto tempo dura um tratamento?
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a"><p>Varia conforme o procedimento. O prazo é apresentado no plano de tratamento, logo após a avaliação.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            Posso remarcar minha consulta?
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a"><p>Sim. Basta avisar com antecedência pelo telefone ou WhatsApp para reorganizarmos o horário.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section id="localizacao" class="location">
+    <div class="wrap loc-grid">
+      <div class="loc-panel">
+        <h2>Onde estamos</h2>
+        <p>No Centro de Alagoinhas, fácil de chegar e de estacionar por perto.</p>
+
+        <div class="loc-line">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <div>
+            <strong>R. Lauro de Freitas, 167</strong>
+            <span>Centro, Alagoinhas - BA, 48005-015</span>
+          </div>
+        </div>
+
+        <div class="loc-line">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 3a2 2 0 0 1-.4 2.1L8 10.1a16 16 0 0 0 6 6l1.3-1.4a2 2 0 0 1 2.1-.4c1 .4 2 .6 3 .7a2 2 0 0 1 1.7 2z"/></svg>
+          <div>
+            <strong>(75) 3422-2057</strong>
+            <span>WhatsApp: (75) 99912-7479</span>
+          </div>
+        </div>
+
+        <div class="loc-line">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
+          <div>
+            <strong>realceodonto@hotmail.com</strong>
+            <span>Resposta durante o horário de atendimento</span>
+          </div>
+        </div>
+
+        <a href="https://wa.me/5575999127479?text=Ol%C3%A1!%20Quero%20agendar%20uma%20consulta%20na%20Realce%20Odonto." class="btn btn-primary" style="margin-top:10px;background:var(--brass);">
+          Agendar pelo WhatsApp
+        </a>
+      </div>
+
+      <div class="map-frame">
+        <iframe
+          src="https://www.google.com/maps?q=Realce+Odonto+Dr+Ravel,+R.+Lauro+de+Freitas,+167,+Centro,+Alagoinhas+-+BA&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa da Realce Odonto - Dr. Ravel em Alagoinhas">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="wrap">
+      <div class="cta-box">
+        <h2>Pronto para dar o primeiro passo?</h2>
+        <p>Fale agora com a equipe da Realce Odonto e agende sua avaliação no Centro de Alagoinhas.</p>
+        <a href="https://wa.me/5575999127479?text=Ol%C3%A1!%20Quero%20agendar%20uma%20consulta%20na%20Realce%20Odonto." class="btn btn-primary">
+          Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg width="30" height="30" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="27" cy="27" r="18" stroke="#B8863E" stroke-width="4"/>
+            <line x1="40" y1="40" x2="54" y2="54" stroke="#F7F3EA" stroke-width="5" stroke-linecap="round"/>
+            <path d="M19 29c3 5 15 5 18 0" stroke="#F7F3EA" stroke-width="3" stroke-linecap="round" fill="none"/>
+          </svg>
+          <span>Realce Odonto</span>
+        </div>
+        <p>Clínica odontológica no Centro de Alagoinhas-BA, sob responsabilidade técnica do Dr. Ravel Carvalho.</p>
+      </div>
+
+      <div>
+        <h4>Navegação</h4>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#processo">Como funciona</a>
+        <a href="#faq">Perguntas frequentes</a>
+      </div>
+
+      <div>
+        <h4>Contato</h4>
+        <a href="tel:+557534222057">(75) 3422-2057</a>
+        <a href="https://wa.me/5575999127479">(75) 99912-7479</a>
+        <a href="mailto:realceodonto@hotmail.com">realceodonto@hotmail.com</a>
+        <a href="https://www.instagram.com/dr.ravel/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © <span id="year"></span> Realce Odonto - Dr. Ravel. Todos os direitos reservados.
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5575999127479?text=Ol%C3%A1!%20Quero%20agendar%20uma%20consulta%20na%20Realce%20Odonto." aria-label="Falar no WhatsApp">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.2 3.4 5.3 4.7.7.3 1.3.5 1.8.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script>
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 12);
+  });
+
+  const menuBtn = document.getElementById('menuBtn');
+  const navlinks = document.getElementById('navlinks');
+  menuBtn.addEventListener('click', () => {
+    const isOpen = navlinks.classList.toggle('active');
+    menuBtn.classList.toggle('active', isOpen);
+    menuBtn.setAttribute('aria-expanded', isOpen);
+  });
+  navlinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navlinks.classList.remove('active');
+    menuBtn.classList.remove('active');
+  }));
+
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const answer = item.querySelector('.faq-a');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(o => {
+        o.classList.remove('open');
+        o.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    });
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
